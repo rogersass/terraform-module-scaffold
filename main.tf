@@ -38,8 +38,8 @@ resource "azurerm_subnet" "training" {
    address_prefixes     = [ "10.0.1.0/24" ]
 }
 
-resource "azurerm_subnet" "devtest" {
-   name                 = "devtest"
+resource "azurerm_subnet" "dev" {
+   name                 = "dev"
    resource_group_name  = azurerm_resource_group.core.name
    virtual_network_name = azurerm_virtual_network.core.name
 
