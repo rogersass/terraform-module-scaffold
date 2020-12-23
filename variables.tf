@@ -3,6 +3,9 @@ variable "loc" {
     default     =   "westus2"
 }
 
-variable "tags" {}
-
-variable "webapplocs" {}
+variable "tags" {
+    default     = {
+        source  = "citadel"
+        env     = "training"
+    }
+}
